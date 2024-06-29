@@ -12,11 +12,11 @@ selectscene::selectscene(QWidget *parent) :
     ui(new Ui::selectscene)
 {
     ui->setupUi(this);
-    QSound* btnsound=new QSound(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/clicksound.wav",this);
+    QSound* btnsound=new QSound("./resourse/clicksound.wav",this);
     setWindowTitle("模式选择界面");
-    setWindowIcon(QIcon(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/windowicon.png"));
+    setWindowIcon(QIcon("./resourse/windowicon.png"));
     setFixedSize(2400,1332);
-    MyQPushButton* backbtn=new MyQPushButton(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/backbtn (2).png");
+    MyQPushButton* backbtn=new MyQPushButton("./resourse/backbtn2.png");
     backbtn->setParent(this);
     backbtn->move(15,0);
     connect(backbtn,&MyQPushButton::clicked,[=](){
@@ -30,7 +30,7 @@ selectscene::selectscene(QWidget *parent) :
     });
     play=new playscene;
     play2=new playscene2;
-    MyQPushButton* selectbtn=new MyQPushButton(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/selectbtn.png");
+    MyQPushButton* selectbtn=new MyQPushButton("./resourse/selectbtn.png");
     selectbtn->setParent(this);
     selectbtn->move(this->width()*0.5-selectbtn->width()*0.5,this->height()*0.4);
     connect(selectbtn,&MyQPushButton::clicked,[=](){
@@ -45,7 +45,7 @@ selectscene::selectscene(QWidget *parent) :
 
     });
 
-    MyQPushButton* selectbtn2=new MyQPushButton(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/selectbtn2.png");
+    MyQPushButton* selectbtn2=new MyQPushButton("./resourse/selectbtn2.png");
     selectbtn2->setParent(this);
     selectbtn2->move(this->width()*0.5-selectbtn->width()*0.5,this->height()*0.6);
     connect(selectbtn2,&MyQPushButton::clicked,[=](){
@@ -80,7 +80,7 @@ void selectscene::paintEvent(QPaintEvent *)
 {
     QPainter painter(this);
     QPixmap pix;
-    pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/playscene.png");
+    pix.load("./resourse/playscene.png");
     painter.drawPixmap(0,0,this->width(),this->height(),pix);
 }
 

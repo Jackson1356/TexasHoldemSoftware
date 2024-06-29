@@ -16,15 +16,15 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     setWindowTitle("德州扑克");
     setFixedSize(2400,1332);
-    setWindowIcon(QIcon(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/windowicon.png"));
-    MyQPushButton *startbtn = new MyQPushButton(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/startbtn.png");
+    setWindowIcon(QIcon("./resourse/windowicon.png"));
+    MyQPushButton *startbtn = new MyQPushButton("./resourse/startbtn.png");
     startbtn->setParent(this);
     startbtn->move(this->width()*0.5-startbtn->width()*0.5,this->height()*0.5);
     select=new selectscene;
-    bgm=new QSound(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/startbgm.wav",this);
+    bgm=new QSound("./resourse/startbgm.wav",this);
     bgm->play();
     bgm->setLoops(-1);
-    QSound* btnsound=new QSound(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/clicksound.wav",this);
+    QSound* btnsound=new QSound("./resourse/clicksound.wav",this);
     connect(startbtn,&MyQPushButton::clicked,[=](){
         qDebug()<<"游戏开始";
         btnsound->play();
@@ -35,7 +35,7 @@ MainWindow::MainWindow(QWidget *parent) :
             select->show();
         });
     });
-    MyQPushButton*quesbtn=new MyQPushButton(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/quesbtn.png");
+    MyQPushButton*quesbtn=new MyQPushButton("./resource/quesbtn.png");
     quesbtn->setParent(this);
     quesbtn->move(this->width()-quesbtn->width(),this->height()-quesbtn->height());
 
@@ -72,7 +72,7 @@ void MainWindow::paintEvent(QPaintEvent *)
 {
     QPainter painter(this);
     QPixmap pix;
-    pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/startscene.png");
+    pix.load("./resourse/startscene.png");
     painter.drawPixmap(0,0,this->width(),this->height(),pix);
 }
 

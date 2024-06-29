@@ -22,11 +22,11 @@ playscene::playscene(QWidget *parent) :
     {
         game.Clear();
     }
-    QSound* btnsound=new QSound(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/clicksound.wav",this);
-    QSound* chipsound=new QSound(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/筹码掉落.wav");
+    QSound* btnsound=new QSound("./resourse/clicksound.wav",this);
+    QSound* chipsound=new QSound("./resourse/chips.wav");
     srand((unsigned)(time(NULL)));
     setWindowTitle("十五轮模式");
-    setWindowIcon(QIcon(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/windowicon.png"));
+    setWindowIcon(QIcon("./resourse/windowicon.png"));
     setFixedSize(2400,1332);
     int x=rand()%8;
     game.Set_iPicture(x);
@@ -34,7 +34,7 @@ playscene::playscene(QWidget *parent) :
     PlayerImg(ui->label_2,x+1);
     PlayerImg(ui->label_3,x+2);
     PlayerImg(ui->label_4,x+3);
-    MyQPushButton* backbtn=new MyQPushButton(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/backbtn3.png");
+    MyQPushButton* backbtn=new MyQPushButton("./resourse/backbtn3.png");
     backbtn->setParent(this);
     backbtn->move(-50,-50);
     connect(backbtn,&MyQPushButton::clicked,[=](){
@@ -69,19 +69,19 @@ playscene::playscene(QWidget *parent) :
 //    ui->label_cbm_9->hide();
 //    ui->label_cbm_10->hide();
     ui->bettingcontrol->hide();
-    fold=new MyQPushButton(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/foldbtn.png");
+    fold=new MyQPushButton("./resourse/foldbtn.png");
     fold->setParent(this);
     fold->move(this->width()-fold->width(),this->height()-fold->height());
 //    fold->hide();
-    follow=new MyQPushButton(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/followbtn.png");
+    follow=new MyQPushButton("./resourse/followbtn.png");
     follow->setParent(this);
     follow->move(this->width()-follow->width()-fold->width(),this->height()-follow->height());
 //    follow->hide();
-    add=new MyQPushButton(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/addbtn.png");
+    add=new MyQPushButton("./resourse/addbtn.png");
     add->setParent(this);
     add->move(this->width()-add->width()-follow->width()-fold->width(),this->height()-add->height());
 //    add->hide();
-    confirm=new MyQPushButton(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/confirmbtn.png");
+    confirm=new MyQPushButton("./resourse/confirmbtn.png");
     confirm->setParent(this);
     confirm->move(this->width()-add->width()-follow->width()-fold->width()-confirm->width(),this->height()-confirm->height());
     confirm->hide();
@@ -163,7 +163,7 @@ playscene::playscene(QWidget *parent) :
     QString a=QString::number(y);
     ui->label_count_2->setText(a);
 
-    MyQPushButton * dealbtn=new MyQPushButton(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/dealbtn.png");
+    MyQPushButton * dealbtn=new MyQPushButton("./resourse/dealbtn.png");
     dealbtn->setParent(this);
     dealbtn->move(this->width()*0.5-dealbtn->width()*0.5,this->height()*0.5);
     connect(dealbtn,&MyQPushButton::clicked,[=](){
@@ -193,7 +193,7 @@ playscene::playscene(QWidget *parent) :
                 Fly(ui->label_17,910,600);
                 Fly(ui->label_18,1270,600);
                 Fly(ui->label_19,1390,600);
-                MyQPushButton * lookbtn=new MyQPushButton(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/lookbtn.png");
+                MyQPushButton * lookbtn=new MyQPushButton("./resourse/lookbtn.png");
                 lookbtn->setParent(this);
                 lookbtn->show();
                 lookbtn->move(this->width()*0.5-lookbtn->width()*0.5+10,1010);
@@ -202,8 +202,8 @@ playscene::playscene(QWidget *parent) :
                     lookbtn->zoom1();
                     lookbtn->zoom2();
                     QTimer::singleShot(300,this,[=](){
-                        Turn(ui->label_9,":/F:/qq文件/暑期大作业 德州扑克/picture resourse/方块A.png");
-                        Turn(ui->label_10,":/F:/qq文件/暑期大作业 德州扑克/picture resourse/方块K.png");
+                        Turn(ui->label_9,"./resourse/da.png");
+                        Turn(ui->label_10,"./resourse/dk.png");
                         lookbtn->hide();
                     });
                 });
@@ -242,7 +242,7 @@ void playscene::paintEvent(QPaintEvent *)
 {
     QPainter painter(this);
     QPixmap pix;
-    pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/playscene.png");
+    pix.load("./resourse/playscene.png");
     painter.drawPixmap(0,0,this->width(),this->height(),pix);
 }
 
@@ -251,35 +251,35 @@ void playscene::PlayerImg(QLabel * a,int x)
     QPixmap pix;
     if(x==0||x==8)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player1.png");
+        pix.load("./resourse/player1.png");
     }
     else if(x==1||x==9)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player2.png");
+        pix.load("./resourse/player2.png");
     }
     else if(x==2||x==10)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player3.png");
+        pix.load("./resourse/player3.png");
     }
     else if(x==3)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player4.png");
+        pix.load("./resourse/player4.png");
     }
     else if(x==4)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player5.png");
+        pix.load("./resourse/player5.png");
     }
     else if(x==5)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player6.png");
+        pix.load("./resourse/player6.png");
     }
     else if(x==6)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player7.png");
+        pix.load("./resourse/player7.png");
     }
     else if(x==7)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player8.png");
+        pix.load("./resourse/player8.png");
     }
     a->setPixmap(pix);
 
@@ -291,35 +291,35 @@ void playscene::PlayerImg_2(QLabel * a,int x)
     QPixmap pix;
     if(x==0||x==8)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player1_2.png");
+        pix.load("./resourse/player1_2.png");
     }
     else if(x==1||x==9)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player2_2.png");
+        pix.load("./resourse/player2_2.png");
     }
     else if(x==2||x==10)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player3_2.png");
+        pix.load("./resourse/player3_2.png");
     }
     else if(x==3)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player4_2.png");
+        pix.load("./resourse/player4_2.png");
     }
     else if(x==4)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player5_2.png");
+        pix.load("./resourse/player5_2.png");
     }
     else if(x==5)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player6_2.png");
+        pix.load("./resourse/player6_2.png");
     }
     else if(x==6)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player7_2.png");
+        pix.load("./resourse/player7_2.png");
     }
     else if(x==7)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player8_2.png");
+        pix.load("./resourse/player8_2.png");
     }
     a->setPixmap(pix);
 
@@ -330,35 +330,35 @@ void playscene::PlayerImg_4(QLabel *a,int i)
     QPixmap pix;
     if(i==0||i==8)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player1_3.png");
+        pix.load("./resourse/player1_3.png");
     }
     if(i==1||i==9)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player2_3.png");
+        pix.load("./resourse/player2_3.png");
     }
     if(i==2||i==10)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player3_3.png");
+        pix.load("./resourse/player3_3.png");
     }
     if(i==3)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player4_3.png");
+        pix.load("./resourse/player4_3.png");
     }
     if(i==4)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player5_3.png");
+        pix.load("./resourse/player5_3.png");
     }
     if(i==5)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player6_3.png");
+        pix.load("./resourse/player6_3.png");
     }
     if(i==6)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player7_3.png");
+        pix.load("./resourse/player7_3.png");
     }
     if(i==7)
     {
-        pix.load(":/F:/qq文件/暑期大作业 德州扑克/picture resourse/player8_3.png");
+        pix.load("./resourse/player8_3.png");
     }
     a->setPixmap(pix);
 }
