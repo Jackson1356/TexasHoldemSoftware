@@ -1,5 +1,7 @@
-# TexasHoldemSoftware
-A simple texas hold'em poker game software based on QT and C++, enabling human to play with computer players.
+# TexasHoldemSoftwar
+
+# Introduction
+This is a simple game software built on QT and C++, which enables human player to play with computer players in a certain number of games and the one with the most chips would win. The strategy of computer players are based on remaining chips and other players' action, and a simple Monte Carlo Tree Search to calculate the probability of winning is implemented.
 # Demo
 Video demo on Youtube: https://youtu.be/eucIuXNHon8?si=5--GxFqs5Th4YJ4D
 
