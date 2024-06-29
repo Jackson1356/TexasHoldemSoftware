@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>rulescene</class>
+ <widget class="QMainWindow" name="rulescene">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2400</width>
+    <height>1332</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="minimumSize">
+       <size>
+        <width>2400</width>
+        <height>1332</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>2400</width>
+        <height>1332</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2398</width>
+         <height>1330</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <family>楷体</family>
+            <pointsize>36</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="lineWidth">
+           <number>0</number>
+          </property>
+          <property name="text">
+           <string>规则介绍</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="buddy">
+           <cstring></cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextBrowser" name="textBrowser">
+          <property name="font">
+           <font>
+            <family>楷体</family>
+            <pointsize>14</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+            <kerning>true</kerning>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <property name="lineWidth">
+           <number>0</number>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'楷体'; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;德州扑克基本玩法&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;每个牌手发2张底牌，然后再依次发5张公共牌，每个牌手从手里的2张和5张公共牌中，选出5张组合成最大的牌组，与其他人进行输赢比较。牌组大小规则：同花顺＞四条＞葫芦＞同花＞顺子＞三条＞两对＞一对＞单牌。德州扑克一共押四轮注：每人发2张牌后进行第一轮押注；发3张公共牌后押第二轮注；发第4张公共牌后押第三轮注；发第5张公共牌后押第四轮注。押注结束后所有剩余玩家进行比牌，最大者赢得底池。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;扑克成手牌等级排列&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;皇家同花顺&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;同花色的A, K, Q, J和10。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;平手牌：在摊牌的时候有两副多副皇家同花顺时，平分筹码。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;同花顺&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;五张同花色的连续牌。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;平手牌：如果摊牌时有两副或多副同花顺，连续牌的头张牌大的获得筹码。如果是两副或多副相同的连续牌，平分筹码。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;四条&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;其中四张是相同点数但不同花的扑克牌，第五张是随意的一张牌&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;平手牌：如果两组或者更多组摊牌，则四张牌中的最大者赢局，如果一组人持有&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;的四张牌是一样的，那么第五张牌最大者赢局（起脚牌）。如果起脚牌也一样，平分底池。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;葫芦&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;由三张相同点数及任何两张其他相同点数的扑克牌组成&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;平手牌：如果两组或者更多组摊牌，那么三张相同点数中较大者赢局。如果三张牌都一样，则两张牌中点数较大者赢局，如果所有的牌都一样，则平分底池。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;同花&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;此牌由五张不按顺序但相同花的扑克牌组成&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;平手牌：如果不止一人抓到此牌相，则牌点最高的人赢得该局，如果最大点相同，则由第二、第三、第四或者第五张牌来决定胜负，如果所有的牌都相同，平分彩池。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;顺子&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;此牌由五张顺序扑克牌组成。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;平手牌：如果不止一人抓到此牌，则五张牌中点数最大的赢得此局，如果所有牌点数都&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;相同，平分彩池。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;三条&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;由三张相同点数和两张不同点数的扑克组成。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;平手牌：如果不止一人抓到此牌，则三张牌中最大点数者赢局，如果三张牌都相同，比较第四张牌，必要时比较第五张，点数大的人赢局。如果所有牌都相同，则平分底池。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;两对&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;两对点数相同但两两不同的扑克和随意的一张牌组成&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;平手牌：如果不止一人抓大此牌相，牌点比较大的人赢，如果比较大的牌点相同，那么较小牌点中的较大者赢，如果两对牌点相同，那么第五张牌点较大者赢（起脚牌）。如果起脚牌也相同，则平分底池。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;一对&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;由两张相同点数的扑克牌和另三张随意的牌组成&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;平手牌：如果不止一人抓到此牌，则两张牌中点数大的赢，如果对牌都一样，则比较另外三张牌中大的赢，如果另外三张牌中较大的也一样则比较第二大的和第三大的，如果所有的牌都一样，则平分底池。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;高牌&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;既不是同一花色也不是同一点数的五张牌组成。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;平手牌：如果不止一人抓到此牌，则比较点数最大者，如果点数最大的相同，则比较第二、第三、第四和第五大的，如果所有牌都相同，则平分底池。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;德州扑克规则详细介绍&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:17px; margin-bottom:17px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-weight:600;&quot;&gt;庄家&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;&lt;br /&gt;首先确定庄家（英文为Button，固也称按钮）位置。第一局庄家位置系统随机指定，以后每局庄家位置按照顺时针方向下移一位。&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-weight:600;&quot;&gt;盲注&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;&lt;br /&gt;为了使得游戏能够进行，强制庄家左边第一个人下一注（称小盲注），按钮左边第二个人下两注（称大盲注）。&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-weight:600;&quot;&gt;底牌&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;&lt;br /&gt;下盲注后从下大盲注玩家开始按顺时针方向每人发两张牌，皆为暗牌，称底牌或起手牌。&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-weight:600;&quot;&gt;第一轮下注&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;&lt;br /&gt;1、发底牌后，从大盲注左边的玩家开始行动，行动指从以下几项选择其一：&lt;br /&gt;a)弃牌：放弃本副牌，不参与竞争。&lt;br /&gt;b)让牌：观望态度，或者是挖陷阱。&lt;br /&gt;c)跟注：跟到和上家相同的注额。&lt;br /&gt;d)加注：增加下注额。&lt;br /&gt;2、一人结束行动后按顺时针方向下一玩家获得行动权，直到不再有人弃牌，且每人已向奖池投入相同注额。已弃牌玩家不再有行动权。&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-weight:600;&quot;&gt;翻牌及第二轮下注&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;&lt;br /&gt;1、发三张牌到牌桌中央，称为“翻牌”，为公共牌，所有人可见。&lt;br /&gt;2、从小盲注玩家按顺时针方向做同于第一轮的行动，直到不再有人弃牌，且每人已向奖池投入相同注额。已弃牌玩家不再参与游戏。&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-weight:600;&quot;&gt;转牌及第三轮下注&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;&lt;br /&gt;1、发第四张牌，称为“转牌”，为公共牌，所有人可见。&lt;br /&gt;2、从小盲注玩家按顺时针方向做同于第一轮的行动，直到不再有人弃牌，且每人已向奖池投入相同注额。已弃牌玩家不再参与游戏。&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-weight:600;&quot;&gt;河牌及第四轮下注&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;&lt;br /&gt;1、发第五张牌，称为“河牌”，为公共牌，所有人可见。&lt;br /&gt;2、从小盲注玩家按顺时针方向做同于第一轮的行动，直到不再有人弃牌，且每人已向奖池投入相同注额。已弃牌玩家不再参与游戏。&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-weight:600;&quot;&gt;摊牌和比牌&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;&lt;br /&gt;四轮下注都完成后，若仍剩余两名或两名以上玩家，则进行比牌。&lt;br /&gt;比牌时，每位玩家用手中2张底牌与5张公共牌中任选5张组成最大牌者进行比较大小。胜者赢得底池所有注码。若有多人获胜，则平分底池注码。&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-weight:600;&quot;&gt;全押&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:17px; margin-bottom:17px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;当一个玩家加注或企图跟注却筹码不足时，他可以选择全押。当有玩家全押时，他会跟进他所有的筹码，底池被分为主池和边池。其他玩家多出全押玩家筹码的注额将都会被加入边池，此全押玩家将不可能获得边池而只可能赢得主池。同理，当多个玩家全押时可能出现多个边池。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:17px; margin-bottom:17px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;一局结束时从可能赢取玩家最少的底池开始比较，每个底池的赢得者可能相同，也可能不同。&lt;/span&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif'; color:#121212;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:17px; margin-bottom:17px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-weight:600;&quot;&gt;很强的牌: AA, KK, QQ / AKs / AKo&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;&lt;br /&gt;在你之前对手的行动 前面位置 中间位置 后面位置 小盲注 大盲注。&lt;br /&gt;无论你们的对手做了什么 尽情加注！(RAISE)&lt;br /&gt;强牌: JJ, 10-10, 99 / AQs, AQo, AJs&lt;br /&gt;在你之前对手的行动 前面位置 中间位置 后面位置 小盲注 大盲注。&lt;br /&gt;所有玩家都弃牌 加注(Raise)&lt;br /&gt;一个玩家跟注 加注(Raise)&lt;br /&gt;两个以上的玩家跟注 加注(Raise)&lt;br /&gt;只有一个玩家加注,&lt;br /&gt;但没有玩家跟注 弃牌(Fold) 加注(Raise)&lt;br /&gt;只有一个玩家加注,&lt;br /&gt;并至少有一个玩家跟注 跟注(Call)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:17px; margin-bottom:17px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-weight:600;&quot;&gt;中等牌: AJo, A-10s, A-10o, KQs, KQo&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;&lt;br /&gt;在你之前对手的行动 前面位置 中间位置 后面位置 小盲注 大盲注&lt;br /&gt;所有玩家都弃牌 弃牌(Fold) 加注(Raise)&lt;br /&gt;一个玩家跟注 弃牌(Fold) 加注(Raise)&lt;br /&gt;两个以上的玩家跟注 弃牌(Fold) 加注(Raise)&lt;br /&gt;只有一个玩家加注，&lt;br /&gt;但没有玩家跟注 弃牌(Fold) 跟注(Call)&lt;br /&gt;只有一个玩家加注,&lt;br /&gt;并至少有一个玩家跟注 弃牌(Fold)(持有KQs跟注) 跟注(Call)&lt;br /&gt;强投机牌: 从88 到22 /KJs, K-10s, QJs, Q-10s, J-10s, 10-9s&lt;br /&gt;在你之前对手的行动 前面位置 中间位置 后面位置 小盲 注 大盲注&lt;br /&gt;所有玩家都弃牌 弃牌(Fold) 加注(Raise)&lt;br /&gt;一个玩家跟注 弃牌(Fold) 跟注(Call) 看牌(Check)&lt;br /&gt;两个以上的玩家跟注 跟注(Call) 看牌(Check)&lt;br /&gt;只有一个玩家加注,&lt;br /&gt;但没有玩家跟注 弃牌(Fold) 跟注(Call)&lt;br /&gt;只有一个玩家加注,&lt;br /&gt;并至少有一个玩家跟注 跟注(Call)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:17px; margin-bottom:17px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-weight:600;&quot;&gt;混合牌：KJo, K-10o, QJo, Q-10o, J-10o / 从 A9s 到 A2s, K9s, 98s, 87s&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;&lt;br /&gt;在你之前对手的行动 前面位置 中间位置 后面位置 小盲注 大盲注&lt;br /&gt;所有玩家都弃牌 弃牌(Fold) 加注(Raise)&lt;br /&gt;一个玩家跟注 弃牌(Fold) 跟注(Call) 看牌(Check)&lt;br /&gt;两个以上的玩家跟注 弃牌(Fold) 跟注(Call) 看牌(Check)&lt;br /&gt;只有一个玩家加注,但没有玩家跟注 弃牌(Fold)&lt;br /&gt;只有一个玩家加注,&lt;br /&gt;并至少有一个玩家跟注 弃牌(Fold)&lt;br /&gt;在你之前有超过一次加注(Raise)的情况,除了持有很强的牌,即 AA, KK, QQ / AKs / AKo可以继续加注外, 其它的牌面都应弃牌(Fold)。&lt;br /&gt;在起手牌一览表中罗列出了所有具有可游戏价值的起手牌系列。在表中没有出现的牌是不建议打的牌，应该在游戏中弃牌。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:-10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
